@@ -1,4 +1,4 @@
-# Aplikasi Belajar Pintar CLI Untuk Membantu Murid Sesuai Mata Pelajaran
+# Aplikasi Belajar Pintar Interaktif Dengan Fitur Streak
 
 ## 1. Deskripsi Singkat
 Project ini adalah aplikasi pembelajaran berbasis CLI menggunakan Python.
