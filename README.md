@@ -27,5 +27,5 @@ Program ini memiliki sistem soal, streak belajar, dan pengingat belajar berdasar
 - Amar Munjazi
 - Raffa Basjhani Putra Febha
 - Metrik Gustrias Luberizky
-- Abdillah
+- Abdillah Nabhan Rizziq
 - Mahesa Zufar Darmawan Putra
