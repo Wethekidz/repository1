@@ -172,4 +172,5 @@ def main():
             print("Input harus angka. Coba lagi.")
 
 if __name__ == "__main__":
+
     main()
