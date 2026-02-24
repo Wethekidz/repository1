@@ -1,7 +1,6 @@
 import os
 import datetime
 
-# Struktur data untuk menyimpan soal-soal berdasarkan hari (dictionary of lists of dictionaries)
 questions_by_day = {
     "Senin": [
         {"question": "Berapa hasil 5 + 3?", "options": ["7", "8", "9"], "answer": "8"},
@@ -40,7 +39,6 @@ questions_by_day = {
     ]
 }
 
-# Fungsi untuk mendapatkan hari saat ini dalam bahasa Indonesia
 def get_current_day():
     days = {
         0: "Senin",
@@ -54,7 +52,6 @@ def get_current_day():
     today = datetime.datetime.now().weekday()
     return days[today]
 
-# Fungsi untuk memuat data streak dari file
 def load_streak():
     if os.path.exists("streak.txt"):
         try:
@@ -65,7 +62,6 @@ def load_streak():
             return 0
     return 0
 
-# Fungsi untuk menyimpan data streak ke file
 def save_streak(streak):
     try:
         with open("streak.txt", "w") as file:
@@ -73,15 +69,13 @@ def save_streak(streak):
     except IOError:
         print("Error: Gagal menyimpan streak ke file.")
 
-# Fungsi untuk menampilkan menu utama
 def display_menu():
-    print("\n=== Aplikasi Belajar Mirip Duolingo ===")
-    print("1. Mulai Belajar (Soal Umum)")
+    print("\n=== Aplikasi Belajar Dugam Gambir ===")
+    print("1. Belajar Soal Umum")
     print("2. Lihat Streak")
-    print("3. Pengingat Belajar (Berdasarkan Hari)")
+    print("3. Belajar Berdasarkan Hari")
     print("4. Keluar")
 
-# Fungsi untuk memainkan game dengan soal umum
 def play_game(current_streak):
     streak = current_streak
     questions = [
@@ -112,7 +106,6 @@ def play_game(current_streak):
     
     return streak
 
-# Fungsi untuk memainkan game berdasarkan hari (pengingat)
 def play_reminder_game(current_streak, day):
     streak = current_streak
     if day in questions_by_day:
@@ -143,11 +136,9 @@ def play_reminder_game(current_streak, day):
     
     return streak
 
-# Fungsi untuk menampilkan streak
 def view_streak(current_streak):
     print(f"\nStreak saat ini: {current_streak}")
 
-# Fungsi utama
 def main():
     streak = load_streak()
     while True:
@@ -174,3 +165,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
