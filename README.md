@@ -18,7 +18,7 @@ Program ini memiliki sistem soal, streak belajar, dan pengingat belajar berdasar
    python Belajar_Pintar.py
 
 ## 4. Struktur Folder/File
-- tes2.py → Program utama aplikasi
+- Belajar_Pintar.py → Program utama aplikasi
 - streak.txt → Menyimpan data streak pengguna
 - README.md → Dokumentasi project
 
